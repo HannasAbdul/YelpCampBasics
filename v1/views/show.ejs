@@ -1,0 +1,23 @@
+<%- include ('partials/header') %>
+
+<div class="container">
+    <header class="jumbotron">
+        <div class="container">
+            <h3>Welcome To <%= campgrounds.name %></h3>
+        </div>
+    </header>
+    <div class="row text-center">
+        <div class="thumbnail">
+            <img class="img-responsive" src="<%- campgrounds.image%>">
+            <h4><%= campgrounds.name.toUpperCase()%></h4>
+            <a href="/campgrounds/<%- campgrounds._id %>/edit" class="btn btn-primary btn-sm">Edit</a>
+            <a href="#" class="btn btn-danger btn-sm">Delete</a>
+
+        </div>
+        
+    </div>
+
+</div>
+    
+
+<%- include ('partials/footer') %>
